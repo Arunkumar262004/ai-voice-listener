@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f3f4f6; color: #111827; }
+main { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+h1 { margin-bottom: 0; }
+.sub { color: #6b7280; margin-top: 4px; }
+.card { background: #fff; border-radius: 12px; padding: 20px; margin-top: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.card h2 { margin-top: 0; }
+.row { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+input, select, textarea { padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 8px; font: inherit; }
+input { flex: 1; min-width: 160px; }
+textarea { width: 100%; }
+button { padding: 8px 14px; border: 1px solid #d1d5db; background: #f9fafb; border-radius: 8px; cursor: pointer; font: inherit; }
+button:disabled { opacity: .5; cursor: default; }
+button.primary { background: #2563eb; color: #fff; border-color: #2563eb; }
+button.danger { background: #dc2626; color: #fff; border-color: #dc2626; }
+.live { min-height: 64px; padding: 14px; background: #f9fafb; border: 1px dashed #d1d5db; border-radius: 8px; font-size: 1.15rem; }
+.finals { padding-left: 18px; color: #374151; }
+.pulse { color: #dc2626; animation: blink 1s infinite; }
+@keyframes blink { 50% { opacity: .3; } }
+.error { color: #dc2626; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #e5e7eb; vertical-align: top; font-size: .92rem; }
+td.text { width: 50%; white-space: pre-wrap; }
+td.actions { white-space: nowrap; }
+td.actions button { padding: 4px 10px; margin-right: 4px; }
+.empty { text-align: center; color: #9ca3af; }
+.pager { justify-content: center; margin-top: 12px; }
+
+.nav { display: flex; gap: 8px; margin-top: 16px; }
+.nav a { padding: 6px 14px; border-radius: 8px; text-decoration: none; color: #374151; background: #e5e7eb; }
+.nav a.active { background: #2563eb; color: #fff; }
+.meter { height: 8px; background: #e5e7eb; border-radius: 4px; margin-bottom: 10px; overflow: hidden; }
+.meter-bar { height: 100%; background: #16a34a; transition: width .08s; }

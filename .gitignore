@@ -1,0 +1,21 @@
+# Python / Django
+.venv/
+__pycache__/
+*.pyc
+.env
+backend/.hf_cache/
+backend/.tmp/
+backend.log
+*.log
+
+# Node / Vite
+node_modules/
+frontend/dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Assignment brief (not part of the code)
+*.pdf
